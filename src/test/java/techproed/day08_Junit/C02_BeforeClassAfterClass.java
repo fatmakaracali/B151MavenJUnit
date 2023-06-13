@@ -13,7 +13,14 @@ public class C02_BeforeClassAfterClass {
     * AfterClass, class'ta en son calisan methoddur.
     *
     * @BeforeClass ve @AfterClass methodlari sadece static methodlar ile calisir
-    */
+    *
+    *  /*
+        Before class ve After class test methodlarimizdan once bir sefer calismasini istedigimiz kodlari bu methodlara
+    koyariz. Mesela testlerimiz baslamadan once database baglantisi yapmak icin kullanilabilir yada hangi driver'i
+    kullancaksak yine bunu BeforeClass'a koyabiliriz. Ayni sekilde testlerimizden sonra database'i sonlandirmak icin
+    yada raporlarimizi sonlandirmak icin de kullanabiliriz. Ama kullanmak zorunda degiliz
+     */
+
 
     @BeforeClass
     public static void beforeClass() throws Exception {
